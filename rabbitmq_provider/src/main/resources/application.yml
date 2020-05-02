@@ -1,0 +1,16 @@
+server:
+  port: 8082
+spring:
+  application:
+    name: rabbitmq-provider
+
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: admin
+    password: 123
+    virtual-host: testhost
+#    \u786E\u8BA4\u6D88\u606F\u53D1\u9001\u5230\u4EA4\u6362\u673A
+    publisher-confirm-type: correlated
+#    \u786E\u8BA4\u6D88\u606F\u5DF2\u53D1\u9001\u5230\u961F\u5217
+    publisher-returns: true
